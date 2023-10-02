@@ -1,0 +1,121 @@
+GET http://localhost:5000/Habits
+
+###
+
+POST http://localhost:5000/Habits
+Content-Type: application/json
+
+{
+  "title": "1 october",
+  "forWhat": "Mine",
+  "type": "Bad",
+  "score": 10
+}
+
+###
+
+GET http://localhost:5000/Habits/Type?HabitType=Nutural
+
+###
+
+POST http://localhost:5000/habitsDone
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjE1MTMyMSwiZXhwIjoxNjk2MTU1NjQxfQ.DP5Chu_Nas5_c_BLOuRrF8iu5P46D7RCHJwbz__iPl0
+
+{
+  "Habit": "6518820c8a4cd70d91b086be"
+}
+
+###
+
+POST http://localhost:5000/Auth/login
+Content-Type: application/json
+
+{
+  "username": "mouhib007",
+  "password": "mouhib"
+}
+
+###
+
+GET http://localhost:5000/habitsDone/Type?HabitType=Good
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjEwODUxMSwiZXhwIjoxNjk2MTEyODMxfQ._gfn_2iL-nexMJmpvTtK-bwx1c-ZhI4xZpeZWoSu2O8
+
+
+###
+
+GET http://localhost:5000/Tasks/getMyTasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjEwODUxMSwiZXhwIjoxNjk2MTEyODMxfQ._gfn_2iL-nexMJmpvTtK-bwx1c-ZhI4xZpeZWoSu2O8
+
+
+###
+
+
+GET http://localhost:5000/habitsDone/Today
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjE1MTMyMSwiZXhwIjoxNjk2MTU1NjQxfQ.DP5Chu_Nas5_c_BLOuRrF8iu5P46D7RCHJwbz__iPl0
+
+
+### 
+
+GET http://localhost:5000/Tasks/getMyTasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjE4NTIzNSwiZXhwIjoxNjk2MTg5NTU1fQ.T4LLZyS34OP_MzW8O6O5WVWbuVbprszlJuyUqSrgikY
+
+
+###
+
+PUT http://localhost:5000/Tasks/updateTask?taskID=6519c2750cf7067f8a58ab66
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjE4NTIzNSwiZXhwIjoxNjk2MTg5NTU1fQ.T4LLZyS34OP_MzW8O6O5WVWbuVbprszlJuyUqSrgikY
+Content-Type: application/json
+
+{
+  "title": "testing",
+  "date": "2023-11-11T12:34:56Z"
+}
+
+###
+
+POST http://localhost:5000/Tasks/createTask
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjE4NTIzNSwiZXhwIjoxNjk2MTg5NTU1fQ.T4LLZyS34OP_MzW8O6O5WVWbuVbprszlJuyUqSrgikY
+Content-Type: application/json
+
+{
+  "title": "testing",
+  "date": "2023-11-21T12:34:56Z"
+}
+
+
+###
+
+GET http://localhost:5000/Tasks/getMyTasksToday
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjE4NTIzNSwiZXhwIjoxNjk2MTg5NTU1fQ.T4LLZyS34OP_MzW8O6O5WVWbuVbprszlJuyUqSrgikY
+
+
+###
+
+GET http://localhost:5000/Feelings/MyFeelings/Today
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjI0NDU2MCwiZXhwIjoxNjk2MjQ4ODgwfQ.ir2ZVsoZHVBo1Wfg7mixZNvXWJxOTlCQTfujPLz_Uc4
+
+###
+
+POST http://localhost:5000/Feelings
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjI0NDU2MCwiZXhwIjoxNjk2MjQ4ODgwfQ.ir2ZVsoZHVBo1Wfg7mixZNvXWJxOTlCQTfujPLz_Uc4
+Content-Type: application/json
+
+{
+  "title": "Sad"
+}
+
+###
+
+GET http://localhost:5000/Feelings/user?owner=mouhib007
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjI0NDU2MCwiZXhwIjoxNjk2MjQ4ODgwfQ.ir2ZVsoZHVBo1Wfg7mixZNvXWJxOTlCQTfujPLz_Uc4
+
+###
+
+PUT http://localhost:5000/Feelings?FeelingID=651aa4efd2e7318d6ff07610
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MTJlNDhhMTJlMTQ3MTUyNjAxNzlmYiIsImlhdCI6MTY5NjI0NDU2MCwiZXhwIjoxNjk2MjQ4ODgwfQ.ir2ZVsoZHVBo1Wfg7mixZNvXWJxOTlCQTfujPLz_Uc4
+Content-Type: application/json
+
+{
+  "title": "Very Happy"
+}
