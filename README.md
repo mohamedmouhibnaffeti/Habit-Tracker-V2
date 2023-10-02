@@ -37,31 +37,31 @@ Before you begin, ensure you have met the following requirements:
 - you'll se below few screenshots of few examples of the results (Not everythin will be shown because it's too long):
 
   ### Login
-    ![Alt text](https://ibb.co/9GqXqLx)
+    https://ibb.co/9GqXqLx
   
   ### Signup
-    ![Alt text](https://ibb.co/0mDhN1v)
+    https://ibb.co/0mDhN1v
   
   ### Create Habit
-    ![Alt text](https://ibb.co/g785n1M) 
+    https://ibb.co/g785n1M 
   
   ### Get all habits
-    ![Alt text](https://ibb.co/5kDV6qc) 
+    https://ibb.co/5kDV6qc 
   
   ### Add habit to habits done today
-    ![Alt text](https://ibb.co/sWSpy9F) 
+    https://ibb.co/sWSpy9F
   
   ### Get habits by type (Nutural, good, bad) (Selected Nutural in the request)
-    ![Alt text](https://ibb.co/86v6Dcc) 
+    https://ibb.co/86v6Dcc 
 
   ### Get habits done today
-    ![Alt text](https://ibb.co/jH4Y6zS) 
+    https://ibb.co/jH4Y6zS 
   
   ### Get my tasks
-    ![Alt text](https://ibb.co/DzC6BsX) 
+    https://ibb.co/DzC6BsX
   
   ### Get my feelings today
-    ![Alt text](https://ibb.co/99JCMPB) 
+    https://ibb.co/99JCMPB
   
 ## Notes:
   1. The screenshots above are only few examples on how the application works, not all endpoints and functionnalities were tested.
